@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
-import 'package:test_app_1/container_drawer.dart';
-import 'package:test_app_1/uniq_app_bar.dart';
+import 'package:test_app_1/widgets/container_drawer.dart';
+import 'package:test_app_1/widgets/uniq_app_bar.dart';
 
 
 class ProjectsViewScreen extends StatefulWidget {
