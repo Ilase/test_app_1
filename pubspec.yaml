@@ -8,6 +8,7 @@ environment:
 
 dependencies:
   connect_to_sql_server_directly: ^0.0.1
+  mssql_connection: ^1.0.0
   flutter:
     sdk: flutter
 

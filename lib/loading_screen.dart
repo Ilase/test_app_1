@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 
 
+
 class LoadingScreen extends StatefulWidget {
   const LoadingScreen({super.key});
 
@@ -15,7 +16,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
   void initState() { 
     super.initState();
     loadData().then((_){
-      Timer(const Duration(seconds: 5),(){
+      Timer(const Duration(seconds: 3),(){
         Navigator.pushReplacementNamed(context, '/home');
       });
     });
@@ -23,7 +24,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
   }
 
   Future<void> loadData() async {
-    await Future.delayed(const Duration(seconds: 5));
+    await Future.delayed(const Duration(seconds: 3));
   }
 
   @override

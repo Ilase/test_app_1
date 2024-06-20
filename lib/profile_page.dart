@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:test_app_1/drawer.dart';
-import 'package:test_app_1/uniq_app_bar.dart';
+import 'package:test_app_1/container_drawer.dart';
 
 class ProfilePage extends StatefulWidget {
-  ProfilePage({Key? key}) : super(key: key);
+  const ProfilePage({super.key});
 
   @override
   _ProfilePageState createState() => _ProfilePageState();
@@ -12,9 +11,13 @@ class ProfilePage extends StatefulWidget {
 class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: UniqAppBar(title: 'Profile'),
-      drawer: CustomDrawer(),
+    return ContainerDrawer(
+      drawerWidth: 400,
+      drawerAnimationDuration: const Duration(milliseconds: 250),
+      child: Container()
+    
+      
     );
+      
   }
 }

@@ -1,11 +1,11 @@
 
 import 'package:flutter/material.dart';
-import 'package:test_app_1/drawer.dart';
+import 'package:test_app_1/container_drawer.dart';
 import 'package:test_app_1/uniq_app_bar.dart';
 
 
 class ProjectsViewScreen extends StatefulWidget {
-  ProjectsViewScreen({Key? key}) : super(key: key);
+  const ProjectsViewScreen({super.key});
 
   @override
   _ProjectsViewScreenState createState() => _ProjectsViewScreenState();
@@ -14,11 +14,10 @@ class ProjectsViewScreen extends StatefulWidget {
 class _ProjectsViewScreenState extends State<ProjectsViewScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: UniqAppBar(
-        title: 'Project board'
-        ),
-      drawer: CustomDrawer(),
+    return ContainerDrawer(
+      drawerWidth: 400, 
+      drawerAnimationDuration: Duration(milliseconds: 250),
+      child: Container()
     );
   }
 }

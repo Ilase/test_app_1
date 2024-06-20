@@ -18,7 +18,7 @@ class _UniqAppBarState extends State<UniqAppBar> {
       title: Text(widget.title),
       shadowColor: Colors.black54,
       backgroundColor: Colors.blue,
-      titleTextStyle: TextStyle(color: Colors.white, fontSize: 20),
+      titleTextStyle: const TextStyle(color: Colors.white, fontSize: 20),
     );
   }
 }
