@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:test_app_1/profile_page.dart';
-import 'package:test_app_1/projects_view_screen.dart';
-import 'home_screen.dart';
-import 'loading_screen.dart';
+import 'package:test_app_1/pages/profile_page.dart';
+import 'package:test_app_1/pages/projects_view_screen.dart';
+import 'pages/home_screen.dart';
+import 'pages/loading_screen.dart';
 //import 'package:mssql_connection/mssql_connection.dart';
 
 

@@ -15,8 +15,6 @@ class _ProfilePageState extends State<ProfilePage> {
       drawerWidth: 400,
       drawerAnimationDuration: const Duration(milliseconds: 250),
       child: Container()
-    
-      
     );
       
   }
